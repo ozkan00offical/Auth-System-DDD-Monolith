@@ -5,7 +5,7 @@ import {
   deleteUserController,
   findUserByEmailController,
   findAllUsersController
-} from "./controller";
+} from "./controller.ts";
 
 const userRouter = Router();
 

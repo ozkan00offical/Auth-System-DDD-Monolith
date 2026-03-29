@@ -1,8 +1,8 @@
-import * as repo from "../../infrastructure/userRepo";
-import { logger } from "../../../../shared/lib/logger";
-import { hashPassword } from "../../../../shared/lib/passwordHash";
-import { ErrorException } from "../../../../shared/lib/error-exception";
-import type { CreateUserInput, User } from "../../domain/types";
+import * as repo from "../../infrastructure/userRepo.ts";
+import { logger } from "../../../../shared/lib/logger.ts";
+import { hashPassword } from "../../../../shared/lib/passwordHash.ts";
+import { ErrorException } from "../../../../shared/lib/error-exception.ts";
+import type { CreateUserInput, User } from "../../domain/types.ts";
 
 export const createUser = async (input: CreateUserInput): Promise<User> => {
   try {

@@ -1,4 +1,4 @@
-import app from "./app";
+import app from "./app.ts";
 
 const server = async (port: number) => {
     app.listen(port, () => {

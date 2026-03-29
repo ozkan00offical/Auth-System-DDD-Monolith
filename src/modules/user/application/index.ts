@@ -1,5 +1,5 @@
-export { createUser } from "./useCases/create";
-export { updateUser } from "./useCases/update";
-export { deleteUser } from "./useCases/delete";
-export { findUserByEmail } from "./useCases/FindEmail";
-export { findAllUsers } from "./useCases/FindAll";
+export { createUser } from "./useCases/create.ts";
+export { updateUser } from "./useCases/update.ts";
+export { deleteUser } from "./useCases/delete.ts";
+export { findUserByEmail } from "./useCases/FindEmail.ts";
+export { findAllUsers } from "./useCases/FindAll.ts";

@@ -1,7 +1,7 @@
-import * as repo from "../../infrastructure/userRepo";
-import { logger } from "../../../../shared/lib/logger";
-import { ErrorException } from "../../../../shared/lib/error-exception";
-import type { User } from "../../domain/types";
+import * as repo from "../../infrastructure/userRepo.ts";
+import { logger } from "../../../../shared/lib/logger.ts";
+import { ErrorException } from "../../../../shared/lib/error-exception.ts";
+import type { User } from "../../domain/types.ts";
 
 export const deleteUser = async (id: string): Promise<User> => {
   try {

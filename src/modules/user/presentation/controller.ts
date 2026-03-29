@@ -1,6 +1,6 @@
 import type { Request, Response, NextFunction } from "express";
-import type { CreateUserInput, UpdateUserInput } from "../domain/types";
-import * as userUseCases from "../application/index";
+import type { CreateUserInput, UpdateUserInput } from "../domain/types.ts";
+import * as userUseCases from "../application/index.ts";
 
 const assertStringParam = (param: string | string[] | undefined, name: string): string => {
   if (!param || Array.isArray(param)) {

@@ -1,5 +1,5 @@
 import 'dotenv/config';
-import server from './src/server';
+import server from './src/server.ts';
 
 const PORT = process.env.PORT;
 

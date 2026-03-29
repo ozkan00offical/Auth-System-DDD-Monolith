@@ -1,4 +1,4 @@
-import { logger } from "./logger.js"
+import { logger } from "./logger.ts"
 
 export const ErrorException = (message: string, code: number, cause?: unknown) => {
   const error = new Error(message)
