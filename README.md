@@ -1,50 +1,60 @@
-# 🎓 School Club Management System
+# 🔐 Auth System (DDD Monolith)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+Modern web teknolojileri kullanılarak geliştirilmiş, güvenli ve ölçeklenebilir bir **Authentication & Session Management sistemi**.
 
-Modern web teknolojileri ile geliştirilmiş bir **Oturum Yönetimi Özeeliğine Sahip Monolitich Domain Draven Desing Mimari Örneği**.  
-
----
-
-## 🏗️ Genel Yazılım Mimarisi ve Teknoloji Yığını
-
-**Frontend:**  
-Next.js (App Router), TypeScript, Tailwind CSS, React
-
-**Backend:**  
-Node.js, Express.js, Prisma ORM
-
-**Veritabanı:**  
-MySQL (Prisma üzerinden yönetilir)
-
-**Güvenlik:**  
-- Password Hashing (Argon2)  
-- JWT(jose)
-- CORS & CSRF
-- Memory bazlı rate limiter
+Bu proje, **Domain-Driven Design (DDD)** prensiplerine uygun şekilde tasarlanmış **monolitik bir backend mimarisi örneğidir**.
 
 ---
 
-## ⚙️ Kurulum ve Gereksinimler
+## 🚀 Features
 
-### 1️⃣ Ortam Değişkenleri (.env)
+- 🔐 Secure Authentication (JWT - jose)
+- 🧂 Strong Password Hashing (Argon2)
+- 🛡️ CSRF & CORS Protection
+- 🚦 Memory-based Rate Limiting
+- 🧱 Clean Architecture + DDD
+- ⚡ Prisma ORM ile güçlü veri yönetimi
 
-Kök dizinde `.env` dosyası oluşturun ve aşağıdaki değişkenleri tanımlayın:
+---
 
-PORT =  
+## 🏗️ Tech Stack
 
-DATABASE_URL =  
+**Backend**
+- Node.js
+- Express.js
+- Prisma ORM
 
-JWT_SECRET =  
+**Database**
+- MySQL
 
-DATABASE_USER =  
-DATABASE_PASSWORD =  
-DATABASE_NAME =  
-DATABASE_HOST =  
-DATABASE_PORT =  
+**Security**
+- Argon2
+- JWT (jose)
+- CSRF Protection
+- Rate Limiting
 
-NODE_ENV =  
+---
 
+## ⚙️ Setup
+
+### 1. Environment Variables
+
+Create a `.env` file:
+
+```env
+PORT=
+
+DATABASE_URL=
+
+JWT_SECRET=
+
+DATABASE_USER=
+DATABASE_PASSWORD=
+DATABASE_NAME=
+DATABASE_HOST=
+DATABASE_PORT=
+
+NODE_ENV=
 
 ### 2️⃣ Yerel Çalıştırma
 
@@ -61,6 +71,16 @@ npm run dev
 ### 3️⃣ Docker ile Çalıştırma
 
 docker-compose up -d  
+
+---
+
+📂 Project Structure (DDD)
+
+src/
+ ├── domain/
+ ├── application/
+ ├── infrastructure/
+ └── interfaces/
 
 ---
 
